@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+
+.rightside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(82, 44, 44);
+    z-index: 9999;
+    margin-right: -290px;
+    transition: all 5s;
+}
+
+.sidebar {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+    box-shadow: 5px 10px 20px black inset;
+
+}
+.sidebar a {
+background-color: #868181;
+padding: 10px;
+width: 100%;
+text-align: center;
+border-radius: 8px;
+
+}
+.sidebar a:hover {
+background-color: black;
+color: white;
+}
+.display {
+   
+    margin-right: 0px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.704);
+    /* تعيين لون الغطاء وتعتيمه */
+    z-index: 9999;
+    /* تأكد من أن الغطاء فوق كل شيء آخر */
+
+}
+button{
+    padding:10px 20px;
+    background-color: #d5c4c4;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+.exit {
+    width: 100%;
+    padding: 10px;
+}
+
+.exit:hover,
+button:hover {
+
+    background-color: rgb(214, 128, 128);
+    color: white;
+
+}
+
+/***********navbar style ***************************************/
+.navbar{
+    position: sticky;
+    top: 0;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/*background-color:#ebb5b5;*/
+border-bottom: #b65656;
+
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar h2{
+    color: black;
+    padding: 15px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+.list li{
+    padding: 15px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.list a{
+    color: black;
+    padding: 15px;
+    font-weight: 1200px;
+}
+.list a:hover{
+    color: red;
+}
